@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request, abort
 from flask_marshmallow import Marshmallow
+from marshmallow_sqlalchemy import SQLAlchemySchema
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 
@@ -14,4 +15,4 @@ ma = Marshmallow(app)
 
 
 
-from market import routes
+from market import views
